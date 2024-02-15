@@ -1,3 +1,66 @@
 html{
     font-size: 10px;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 3.8rem;
+    color: $gradient_red_text;
+    font-weight: 700;
+    line-height: 4.7rem;
+}
+h2{
+    font-size: 3rem;
+    color: $main_regular;
+    font-weight: 700;
+    line-height: 3.7rem;
+}
+h3{
+    font-size: 2.2rem;
+    color: $main_regular;
+    font-weight: 700;
+    line-height: 2.7rem;
+}
+.h3_caps{
+    font-size: 1.4rem;
+    color: $main_regular;
+    font-weight: 700;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 1.6rem;
+    color: $main_regular;
+    font-weight: 700;
+    line-height: 1.9rem;
+}
+p{
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+ul li{
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+ol li{
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+a{
+    font-size: 1.6rem;
+    color: $active_regular;
+    font-weight: 400;
+    line-height: 2rem;
+    text-decoration: none;
+
+    &:hover{
+        color: $accent;
+    }
+}
