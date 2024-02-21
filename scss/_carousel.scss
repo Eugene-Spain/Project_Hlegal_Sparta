@@ -1,12 +1,18 @@
 // Карусель для страницы About US
 
-.carousel-about-us{
+.carousel-about-us {
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: center;
 
-    &_point{
+    span:first-child{
+        opacity: 1;
+        border-radius: 50%;
+        background-color: $active_regular;
+    }
+
+    &_point {
         display: block;
         width: 16px;
         height: 16px;
@@ -15,19 +21,26 @@
         background-color: $active_regular;
         opacity: 0.2;
 
-        &:hover{
+        &:hover {
             opacity: 0.6;
             background-color: $active_regular;
         }
-        &:active{
+
+        &:active {
             opacity: 1;
             background-color: $active_regular;
         }
 
-        &_mobile{
+        &_mobile {
             display: flex;
-            
-            @media (min-width: 375px) {
+        }
+    }
+
+    @media (min-width: 768px) {
+        margin-left: 42px;
+
+        &_point {
+            &_mobile {
                 display: none;
             }
         }
@@ -36,13 +49,19 @@
 
 // Карусель для страницы homepage
 
-.carousel-homepage{
+.carousel-homepage {
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: center;
 
-    &_point{
+    span:first-child{
+        opacity: 1;
+        border-radius: 50%;
+        background-color: $active_regular;
+    }
+
+    &_point {
         display: block;
         width: 16px;
         height: 16px;
@@ -51,11 +70,12 @@
         background-color: $active_regular;
         opacity: 0.2;
 
-        &:hover{
+        &:hover {
             opacity: 0.6;
             background-color: $active_regular;
         }
-        &:active{
+
+        &:active {
             opacity: 1;
             background-color: $active_regular;
         }

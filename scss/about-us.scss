@@ -1,0 +1,110 @@
+@import "./fonts";
+@import "./globals";
+@import "./variables";
+@import "./common";
+@import "./carousel";
+
+.legal-services {
+    max-width: 315px;
+    margin: 0 auto;
+
+    &__description {
+        margin-top: 30px;
+
+        h1 {
+            font-size: 3rem;
+            line-height: 36.57px;
+            margin-bottom: 30px;
+        }
+
+        h2{
+            font-size: 3rem;
+            line-height: 36.57px;
+            margin-bottom: 30px;
+            font-size: 3.8rem;
+            background: $gradient_red_text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.9rem;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__perks {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border-left: 4px solid $grey_separator;
+        padding-left: 30px;
+        margin-bottom: 30px;
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .heading_numbers {
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 44px;
+            background: $gradient_red_text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.main-photo{
+    max-width: 100vw;
+    margin: 0 auto;
+
+    picture{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.achievements-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey_bg;
+    gap: 30px;
+    padding-top: 30px;
+
+    &__layout{
+        width: 255px;
+        height: 90px;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            display: none;
+
+            &:first-child{
+                display: block;
+            }
+        }
+    }
+
+    .carousel-about-us{
+        padding-bottom: 30px;
+    }
+}
