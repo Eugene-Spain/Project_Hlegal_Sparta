@@ -6,7 +6,9 @@ body{
 }
 h1{
     font-size: 3.8rem;
-    color: $gradient_red_text;
+    background: $gradient_red_text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 700;
     line-height: 4.7rem;
 }
@@ -42,6 +44,7 @@ p{
     line-height: 2.6rem;
 }
 ul li{
+    list-style-type: none;
     font-size: 1.8rem;
     color: #000;
     font-weight: 400;

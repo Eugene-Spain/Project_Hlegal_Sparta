@@ -162,4 +162,96 @@ a:hover {
   background-color: #24A3FF;
 }
 
-/*# sourceMappingURL=homepage.css.map */
+.legal-services {
+  max-width: 315px;
+  margin: 0 auto;
+}
+.legal-services__description {
+  margin-top: 30px;
+}
+.legal-services__description h1 {
+  font-size: 3rem;
+  line-height: 36.57px;
+  margin-bottom: 30px;
+}
+.legal-services__description h2 {
+  font-size: 3rem;
+  line-height: 36.57px;
+  margin-bottom: 30px;
+  font-size: 3.8rem;
+  background: -webkit-linear-gradient(35.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.legal-services__description p {
+  font-size: 1.9rem;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.legal-services__perks {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-left: 4px solid #E6E6F0;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.legal-services__perks ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.legal-services__perks .icon {
+  width: 32px;
+  height: 32px;
+}
+.legal-services__perks .heading_numbers {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 44px;
+  background: -webkit-linear-gradient(35.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.main-photo {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+.main-photo picture {
+  display: flex;
+  justify-content: center;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5FA;
+  gap: 30px;
+  padding-top: 30px;
+}
+.achievements-list__layout {
+  width: 255px;
+  height: 90px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.achievements-list__layout img {
+  display: none;
+}
+.achievements-list__layout img:first-child {
+  display: block;
+}
+.achievements-list .carousel-about-us {
+  padding-bottom: 30px;
+}
+
+/*# sourceMappingURL=about-us.css.map */
