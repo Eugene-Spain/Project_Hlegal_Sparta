@@ -163,7 +163,7 @@ a:hover {
 }
 
 .legal-services {
-  max-width: 315px;
+  min-width: 315px;
   margin: 0 auto;
 }
 .legal-services__description {
@@ -215,6 +215,11 @@ a:hover {
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .legal-services {
+    min-width: 648px;
+  }
+}
 
 .main-photo {
   max-width: 100vw;
@@ -223,6 +228,7 @@ a:hover {
 .main-photo picture {
   display: flex;
   justify-content: center;
+  min-width: 100vw;
 }
 
 .achievements-list {
