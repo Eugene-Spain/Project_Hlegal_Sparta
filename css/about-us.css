@@ -172,25 +172,21 @@ a:hover {
 
 .legal-services {
   min-width: 315px;
-  margin: 0 30px;
+  margin: 30px;
 }
-.legal-services__description {
-  margin-top: 30px;
+.legal-services h2 {
+  font-size: 3rem;
+  line-height: 37px;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(35.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 .legal-services__description h1 {
   font-size: 3rem;
   line-height: 36.57px;
   margin-bottom: 30px;
-}
-.legal-services__description h2 {
-  font-size: 3rem;
-  line-height: 36.57px;
-  margin-bottom: 30px;
-  font-size: 3.8rem;
-  background: -webkit-linear-gradient(35.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
 }
 .legal-services__description p {
   font-size: 1.9rem;
@@ -203,7 +199,6 @@ a:hover {
   gap: 40px;
   border-left: 4px solid #E6E6F0;
   padding-left: 30px;
-  margin-bottom: 30px;
 }
 .legal-services__perks ul li {
   display: flex;
@@ -223,9 +218,30 @@ a:hover {
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
+@media (min-width: 1024px) {
+  .legal-services {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .legal-services h2 {
+    font-size: 3.8rem;
+    max-width: 362px;
+  }
+  .legal-services__description {
+    max-width: 486px;
+  }
+  .legal-services__description h1 {
+    font-size: 3.8rem;
+  }
+  .legal-services__perks {
+    max-width: 388px;
+  }
+}
 @media (min-width: 768px) {
   .legal-services {
     min-width: 648px;
+    margin: 60px;
   }
 }
 

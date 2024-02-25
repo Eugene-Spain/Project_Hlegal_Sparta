@@ -6,10 +6,19 @@
 
 .legal-services {
     min-width: 315px;
-    margin: 0 30px;
+    margin: 30px;
+
+    h2 {
+        font-size: 3rem;
+        line-height: 37px;
+        margin-bottom: 30px;
+        background: $gradient_red_text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
 
     &__description {
-        margin-top: 30px;
 
         h1 {
             font-size: 3rem;
@@ -17,16 +26,6 @@
             margin-bottom: 30px;
         }
 
-        h2{
-            font-size: 3rem;
-            line-height: 36.57px;
-            margin-bottom: 30px;
-            font-size: 3.8rem;
-            background: $gradient_red_text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
-        }
         p {
             font-size: 1.9rem;
             line-height: 30px;
@@ -40,7 +39,7 @@
         gap: 40px;
         border-left: 4px solid $grey_separator;
         padding-left: 30px;
-        margin-bottom: 30px;
+
         ul {
             li {
                 display: flex;
@@ -64,28 +63,52 @@
             margin-bottom: 10px;
         }
     }
+
+    @media (min-width:1024px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        h2{
+            font-size: 3.8rem;
+            max-width: 362px;
+        }
+        &__description {
+            max-width: 486px;
+
+            h1{
+                font-size: 3.8rem;
+            }
+        }
+
+        &__perks {
+            max-width: 388px;
+        }
+    }
+
     @media (min-width:768px) {
         min-width: 648px;
+        margin: 60px;
     }
 }
 
-.main-photo{
+.main-photo {
     max-width: 100vw;
     margin: 0 auto;
+
     // включаем если решаем поменять резиновые картинки на шаблонные
     // picture{
     //     display: flex;
     //     justify-content: center;
     //     min-width: 100vw;
     // }
-    img{
+    img {
         display: flex;
         justify-content: center;
         max-width: 100vw;
     }
 }
 
-.achievements-list{
+.achievements-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,7 +117,7 @@
     gap: 30px;
     padding-top: 30px;
 
-    &__layout{
+    &__layout {
         width: 255px;
         height: 90px;
         border: 1px solid transparent;
@@ -104,16 +127,16 @@
         justify-content: center;
         align-items: center;
 
-        img{
+        img {
             display: none;
 
-            &:first-child{
+            &:first-child {
                 display: block;
             }
         }
     }
 
-    .carousel-about-us{
+    .carousel-about-us {
         padding-bottom: 30px;
     }
 }
