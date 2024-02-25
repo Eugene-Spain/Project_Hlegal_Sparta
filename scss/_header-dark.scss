@@ -210,7 +210,7 @@
   .header {
     padding: 50px 60px 0 60px;
     display: grid;//Использовал грид для перехода, потому что средний элемент выходит влево
-    grid-template-columns: 49% 51%;
+    grid-template-columns: 47% 53%;
 
     &__contacts {
       padding: 0;
