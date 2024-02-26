@@ -276,7 +276,7 @@ a:hover {
   stroke: #323264;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .header__background-mobile {
     background-color: #ffffff;
   }
@@ -345,11 +345,11 @@ a:hover {
     border-bottom: 2px solid;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .header {
     padding: 50px 60px 0 60px;
     display: grid;
-    grid-template-columns: 49% 51%;
+    grid-template-columns: 47% 53%;
   }
   .header__contacts {
     margin: 0;
@@ -364,7 +364,7 @@ a:hover {
     justify-content: flex-end;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media (min-width: 1920px) {
   .header {
     padding: 50px 160px 0 160px;
   }
