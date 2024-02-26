@@ -1,20 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="../css/about-us.css">
+    <!--Не забудь поменять, если нужна тёмная тема(light меняем на dark)-->
 </head>
+
 <body>
-    <main>
-        <section class="legal-services">
-            <div class="legal-services__description">
-                <h1>We turn over the idea of legal services</h1>
-                <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve the adoption of a number of decisions that are important for the industry. Many people form the practice of applying the law of the sea in Ukraine.</p>
-                <p>HLEGAL is a reliable business partner, confirmed by stable cooperation with international law firms, the trust of large Ukrainian and international companies, and the recognition of professional ratings.</p>
+    <header>
+        <div class=" header__main-background-dark">
+            <div class="header">
+                <div class="header__background-mobile">
+                    <!--Блок контактов-->
+                    <div class="header__contacts">
+                        <!-- Выбор языка-->
+                        <div class="header__contacts-language">
+                            <button>УК</button>
+                            <button>РУ</button>
+                            <button>EN</button>
+                        </div>
+                        <span class="header__contacts-dot"><svg class="icon icon-header-dot-separator-icon">
+                                <use xlink:href="../sprites/symbol-defs.svg#icon-header-dot-separator-icon"></use>
+                            </svg></span>
+                        <!-- Улица-->
+                        <div class="header__contacts-street">
+                            <p>Kyiv, Mechnikova str., 14/1</p>
+                        </div>
+                        <span class="header__contacts-dot"> <svg class="icon icon-header-dot-separator-icon">
+                                <use xlink:href="../sprites/symbol-defs.svg#icon-header-dot-separator-icon"></use>
+                            </svg></span>
+                        <!-- Телефон-->
+                        <div>
+                            <p class="header__contacts-number">0800 211 927</p>
+                        </div>
+                        <span class="header__contacts-dot"><svg class="icon icon-header-dot-separator-icon">
+                                <use xlink:href="../sprites/symbol-defs.svg#icon-header-dot-separator-icon"></use>
+                            </svg></span>
+                        <!-- Социальные сети-->
+                        <span class="header__contacts-facebook"><svg class="icon icon-facebook-header-icon ">
+                                <use xlink:href="../sprites/symbol-defs.svg#icon-facebook-header-icon"></use>
+                            </svg></span>
+                    </div>
+                </div>
+                <!--Блок навигации-->
+                <div class="header__navigation">
+                    <div class="header__navigation-logo">
+                        <!-- Логотип компании-->
+                        <svg class="icon icon-logotype header__navigation-logo-img">
+                            <use xlink:href="../sprites/symbol-defs.svg#icon-logotype-black-text"></use>
+                            <!--Не забудь поменять, если нужна тёмная тема(меняем на #icon-logotype(Без -black-text))-->
+                        </svg>
+                        <svg class="icon icon-logo-slash-icon header__navigation-logo-img-slash">
+                            <use xlink:href="../sprites/symbol-defs.svg#icon-logo-slash-icon"></use>
+                        </svg>
+                        <!--Название страницы -->
+                        <p class="header__navigation-logo-breadcrumbs">about us</p>
+                        <!--Меняем для каждой страницы, на которой находится пользователь-->
+                    </div>
+                    <div class="header__navigation-button">
+                        <svg class="icon icon-hamburger-icon">
+                            <use xlink:href="../sprites/symbol-defs.svg#icon-hamburger-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <nav>
+                        <!-- Переход на другие страницы-->
+                        <ul class="header__navigation-list">
+                            <!--Не забываем менять href, для перехода на другие страницы-->
+                            <li><a href="../pages/about-us.html">about us</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">team</a></li>
+                            <li><a href="#">publications</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="legal-services__perks"><ul>
+        </div>
+    </header>
+</body>
+
+</html>
+<main>
+    <section class="legal-services">
+        <div class="legal-services__description">
+            <h1>We turn over the idea of legal services</h1>
+            <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and
+                achieve the adoption of a number of decisions that are important for the industry. Many people form the
+                practice of applying the law of the sea in Ukraine.</p>
+            <p>HLEGAL is a reliable business partner, confirmed by stable cooperation with international law firms, the
+                trust of large Ukrainian and international companies, and the recognition of professional ratings.</p>
+        </div>
+        <div class="legal-services__perks">
+            <ul>
                 <li>
                     <svg class="icon icon-flag-icon">
                         <use xlink:href="../sprites/symbol-defs.svg#icon-flag-icon"></use>
@@ -44,43 +126,54 @@
                     <span class="heading_numbers">500+</span>
                 </li>
                 <li>
-                    <p>hours of pro bono work annually</p>   
+                    <p>hours of pro bono work annually</p>
                 </li>
             </ul>
         </div>
-        </section>
-        <section class="main-photo">
-            <picture>
+    </section>
+    <section class="main-photo">
+        <!-- <picture>
                 <source media="(min-width:1920px)" srcset="../images/About_us/Team_main_desktop_HD.jpg">
                 <source media="(min-width:1440px)" srcset="../images/About_us/Team_main_desktop_SD.jpg">
                 <source media="(min-width:1024px)" srcset="../images/About_us/Team_main_tablet_HD.jpg">
                 <source media="(min-width:768px)" srcset="../images/About_us/Team_main_tablet_SD.jpg">
                 <img src="../images/About_us/Team_main_mobile.jpg" alt="Main Team Photo">
-            </picture>
-        </section>
-        <section class="legal-services">
-            <div class="legal-services__description">
-                <p>The historically unchanged legal profession has begun to reformat in recent years. Clients are feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution in legal services has begun and is imminent.</p>
+            </picture> -->
+        <img src="../images/About_us/Team_main_desktop_HD.jpg" alt="Main Team Photo">
+
+    </section>
+    <section class="legal-services">
+        <div class="legal-services__description">
+                <p>The historically unchanged legal profession has begun to reformat in recent years. Clients are
+                    feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity,
+                    transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution
+                    in legal services has begun and is imminent.</p>
                 <p>Quality is what we care about the most.</p>
-                <p>It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And we want our clients to trust us too.</p>
-                <h2>Quality is what we care about the most.</h2>
-            </div>
-        </section>
-        <section class="achievements-list">
-            <h3 class="h3_caps">
-                achievements
-            </h3>
-            <div class="achievements-list__layout">
-                <img src="../images/About_us/Achievments/Achievment-1.jpg" alt="Achievment-1">
-                <img src="../images/About_us/Achievments/Achievment-2.jpg" alt="Achievment-2">
-                <img src="../images/About_us/Achievments/Achievment-3.jpg" alt="Achievment-3">
-                <img src="../images/About_us/Achievments/Achievment-4.jpg" alt="Achievment-4">
-            </div>
-            <div class="carousel-about-us">
-                <span><a href="#" class="carousel-about-us_point"></a></span><span><a href="#" class="carousel-about-us_point"></a></span><span><a href="#" class="carousel-about-us_point"></a></span>
-                <span><a href="#" class="carousel-about-us_point carousel-about-us_point_mobile"></a></span><span><a href="#" class="carousel-about-us_point carousel-about-us_point_mobile"></a></span></span><span><a href="#" class="carousel-about-us_point carousel-about-us_point_mobile"></a></span></span>
-            </div>
-        </section>
-    </main>
+                <p>It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And
+                    we want our clients to trust us too.</p>
+        </div>
+        <h2>Quality is what we care about the most.</h2>
+    </section>
+    <section class="achievements-list">
+        <h3 class="h3_caps">
+            achievements
+        </h3>
+        <div class="achievements-list__layout">
+            <img src="../images/About_us/Achievments/Achievment-1.jpg" alt="Achievment-1">
+            <img src="../images/About_us/Achievments/Achievment-2.jpg" alt="Achievment-2">
+            <img src="../images/About_us/Achievments/Achievment-3.jpg" alt="Achievment-3">
+            <img src="../images/About_us/Achievments/Achievment-4.jpg" alt="Achievment-4">
+        </div>
+        <div class="carousel-about-us">
+            <span><a href="#" class="carousel-about-us_point"></a></span><span><a href="#"
+                    class="carousel-about-us_point"></a></span><span><a href="#"
+                    class="carousel-about-us_point"></a></span>
+            <span><a href="#" class="carousel-about-us_point carousel-about-us_point_mobile"></a></span><span><a
+                    href="#" class="carousel-about-us_point carousel-about-us_point_mobile"></a></span></span><span><a
+                    href="#" class="carousel-about-us_point carousel-about-us_point_mobile"></a></span></span>
+        </div>
+    </section>
+</main>
 </body>
+
 </html>
