@@ -1,0 +1,72 @@
+@import "variables";
+@import "common";
+@import "globals";
+
+
+.footer {
+  text-align: center;
+  background-color: $grey_bg;
+
+  &__map {
+    a {
+      display: block;
+      margin: 10px 0 21px 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: $main_regular;
+      padding-top: 32px;
+    }
+
+    &-dot {
+      max-width: 6px;
+      max-height: 6px;
+    }
+  }
+
+  &__social-contacts {
+
+    &-facebook {
+      display: inline-block;
+      margin-bottom: 10px;
+
+      &-svg {
+        max-width: 38px;
+        max-height: 38px;
+      }
+    }
+
+
+    &-dot {
+      max-width: 6px;
+      max-height: 6px;
+    }
+
+    &-email {
+      display: block;
+      margin-top: 10px;
+    }
+
+    p {
+      color: $main_alt;
+      font-weight: 700;
+    }
+  }
+
+  &__company {
+    p {
+      color: $grey_text;
+      padding: 30px 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+
+  }
+}
