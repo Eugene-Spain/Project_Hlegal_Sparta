@@ -3,15 +3,11 @@
 @import "common";
 
 .header {
-  max-width: 1600px;//wrapper
+  max-width: 1600px; //wrapper
   margin: 0 auto;
 
-  &__main-background-dark {//background для тёмной темы
-    background: $gradient_supersoft;
-  }
-
   &__background-mobile {
-    background-color: #595982;//background для мобильной версии
+    background-color: $grey_bg;//background для мобильной версии
   }
 
   &__contacts {
@@ -39,7 +35,7 @@
         border-radius: 8px;
         font-size: 1.2rem;
         font-weight: 700;
-        color: #ffffff;
+        color: $grey_text;
       }
 
       button:nth-child(3) {//Для переключения языка(которого у нас нет)
@@ -49,7 +45,7 @@
       }
 
       button:hover {
-        background-color: #ffffff33;
+        background-color: #F5F5FA;
       }
     }
 
@@ -58,12 +54,13 @@
     }
 
     &-number {
-      color: #ffffff;
+      color: $grey_text;
       font-size: 1.6rem;
       font-weight: 700;
       line-height: 1.9rem;
     }
   }
+
 
   &__navigation {
     display: flex;
@@ -83,7 +80,7 @@
 
       &-breadcrumbs {
         font-size: 2rem;
-        color: #ffffff;
+        color: $main_regular;
       }
 
       &-img {
@@ -98,11 +95,11 @@
     }
 
     &-button {
-        svg {
-          max-width: 32px;
-          max-height: 32px;
-          stroke: #ffffff;
-        }
+      svg {
+        max-width: 32px;
+        max-height: 32px;
+        stroke: $main_regular;
+      }
     }
   }
 }
@@ -112,14 +109,13 @@
 
   .header {
     &__background-mobile {
-      background-color: transparent;
+      background-color: #ffffff;
     }
 
     &__contacts {
       justify-content: start;
       gap: 6px;
-      padding: 50px 15px 0 60px;
-      margin: 0;
+      margin: 50px 15px 0 60px;
 
       &-dot {
         display: block;
@@ -137,7 +133,7 @@
         svg {
           max-width: 24px;
           max-height: 24px;
-          fill: #ffffff;
+          fill: $grey_text;
         }
       }
 
@@ -151,7 +147,7 @@
         display: block;
 
         p {
-          color: #ffffff;
+          color: $grey_text;
         }
       }
     }
@@ -186,20 +182,19 @@
 
         a {
           font-weight: 700;
-          color: #ffffff;
         }
 
         a:hover {
           padding-bottom: 3px;
-          border-bottom:  2px solid;
-          color: #ffffff;
+          border-bottom: 2px solid;
+          color: $active_regular;
         }
 
         li:nth-child(1) {//Нужно менять для каждой страницы, будет выделяться в перечне страниц (нумерация осуществляется слева на право(about us, service, team, publication, contact))
           a {
             padding-bottom: 3px;
             color: $accent;
-            border-bottom:  2px solid;
+            border-bottom: 2px solid;
           }
         }
       }
@@ -214,7 +209,6 @@
     grid-template-columns: 47% 53%;
 
     &__contacts {
-      padding: 0;
       margin: 0;
       justify-content: flex-end;
     }
