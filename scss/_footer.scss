@@ -1,0 +1,162 @@
+@import "variables";
+@import "common";
+@import "globals";
+
+
+.footer {
+  text-align: center;
+  background-color: $grey_bg;
+
+  &__box {
+    padding: 30px 0;
+  }
+
+  &__map {
+    a {
+      display: block;
+      margin: 10px 0 21px 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: $main_regular;
+    }
+
+    &-dot {
+      display: none;
+      max-width: 6px;
+      max-height: 6px;
+    }
+  }
+
+  &__social-contacts {
+
+    &-facebook {
+      display: inline-block;
+      margin-bottom: 10px;
+
+      &-svg {
+        fill: $active_regular;
+        max-width: 38px;
+        max-height: 38px;
+      }
+
+      &-svg:hover {
+        fill: $accent;
+      }
+    }
+
+
+    &-dot {
+      display: none;
+    }
+
+    &-email {
+      display: block;
+      margin-top: 10px;
+    }
+
+    p {
+      color: $main_alt;
+      font-weight: 700;
+    }
+  }
+
+  &__company {
+    p {
+      color: $grey_text;
+      padding-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+
+    &__wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    &__map {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        padding: 0;
+      }
+
+      a {
+        margin: 0;
+      }
+
+      &-dot {
+        display: block;
+        max-width: 6px;
+        max-height: 6px;
+        fill: $grey_text;
+      }
+    }
+
+    &__social-contacts {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+
+      &-facebook {
+        margin: 0;
+      }
+
+      &-email {
+        margin: 0;
+      }
+
+      &-dot {
+        display: block;
+        max-width: 6px;
+        max-height: 6px;
+        fill: $grey_text;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+
+    &__wrapper {
+      max-width: none;
+      margin: 0 auto;
+    }
+
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 60px;
+    }
+
+    &__company {
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .footer {
+
+    &__wrapper {
+      max-width: 1920px;
+    }
+
+    &__box {
+      margin: 0 160px;
+    }
+  }
+}
