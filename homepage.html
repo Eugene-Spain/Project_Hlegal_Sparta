@@ -1,11 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+    <title>Homepage</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class=" header__main-background-dark">
+            <div class="header">
+                <div class="header__background-mobile">
+                    <!--Блок контактов-->
+                    <div class="header__contacts">
+                        <!-- Выбор языка-->
+                        <div class="header__contacts-language">
+                            <button>УК</button>
+                            <button>РУ</button>
+                            <button>EN</button>
+                        </div>
+                        <span class="header__contacts-dot"><svg class="icon icon-header-dot-separator-icon">
+                                <use xlink:href="../sprites/symbol-defs.svg#icon-header-dot-separator-icon"></use>
+                            </svg></span>
+                        <!-- Улица-->
+                        <div class="header__contacts-street">
+                            <p>Kyiv, Mechnikova str., 14/1</p>
+                        </div>
+                        <span class="header__contacts-dot"> <svg class="icon icon-header-dot-separator-icon">
+                                <use xlink:href="../sprites/symbol-defs.svg#icon-header-dot-separator-icon"></use>
+                            </svg></span>
+                        <!-- Телефон-->
+                        <div>
+                            <p class="header__contacts-number">0800 211 927</p>
+                        </div>
+                        <span class="header__contacts-dot"><svg class="icon icon-header-dot-separator-icon">
+                                <use xlink:href="../sprites/symbol-defs.svg#icon-header-dot-separator-icon"></use>
+                            </svg></span>
+                        <!-- Социальные сети-->
+                        <span class="header__contacts-facebook"><svg class="icon icon-facebook-header-icon ">
+                                <use xlink:href="../sprites/symbol-defs.svg#icon-facebook-header-icon"></use>
+                            </svg></span>
+                    </div>
+                </div>
+                <!--Блок навигации-->
+                <div class="header__navigation">
+                    <div class="header__navigation-logo">
+                        <!-- Логотип компании-->
+                        <svg class="icon icon-logotype header__navigation-logo-img">
+                            <use xlink:href="../sprites/symbol-defs.svg#icon-logotype"></use>
+                            <!--Не забудь поменять, если нужна тёмная тема(меняем на #icon-logotype(Без -black-text))-->
+                        </svg>
+                        <svg class="icon icon-logo-slash-icon header__navigation-logo-img-slash">
+                            <use xlink:href="../sprites/symbol-defs.svg#icon-logo-slash-icon"></use>
+                        </svg>
+                        <!--Название страницы -->
+                        <p class="header__navigation-logo-breadcrumbs">about us</p>
+                        <!--Меняем для каждой страницы, на которой находится пользователь-->
+                    </div>
+                    <div class="header__navigation-button">
+                        <svg class="icon icon-hamburger-icon">
+                            <use xlink:href="../sprites/symbol-defs.svg#icon-hamburger-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <nav>
+                        <!-- Переход на другие страницы-->
+                        <ul class="header__navigation-list">
+                            <!--Не забываем менять href, для перехода на другие страницы-->
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">team</a></li>
+                            <li><a href="#">publications</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>you legal solutions provider</h1>
+        <a href="#"><svg class="icon icon-scroll-button-img">
+                <use xlink:href="../sprites/symbol-defs.svg#icon-scroll-button-img"></use>
+            </svg>
+        </a>
+        <div>
+            <div>
+                <span>Consistent</span>
+                <span>Customer oriented</span>
+                <span>Innovative</span>
+                <span>Business oriented</span>
+            </div>
+            <div>_______________</div>
+            <div>
+                <span>We turn the idea of legal services</span>
+                <span>Consolidating many years of experience and practice, the company's lawyers accompany complex
+                    projects and achieve a number of important decisions for the industry. Many of them form the
+                    practice of applying the law of the sea in Ukraine.</span>
+            </div>
+        </div>
+        <div>
+            <span>SERVICES ></span>
+            <h2>What can we do better than others?</h2>
+            <div>
+                <div>
+                    <svg class="icon icon-it-and-e-commerce-icon it-and-e-commerce-icon">
+                        <use xlink:href="../sprites/symbol-defs.svg#icon-it-and-e-commerce-icon"></use>
+                    </svg>
+                    <span>IT and e-commerce</span>
+                    <span>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work
+                        distracts you from doing business. But there is not much work to do to hire an in-house
+                        lawyer.</span>
+                </div>
+                <div>
+                    <svg class="icon icon-comprehensive-icon">
+                        <use xlink:href="../sprites/symbol-defs.svg#icon-comprehensive-icon"></use>
+                    </svg>
+                    <span>Comprehensive daily
+                        legal support</span>
+                    <span>In addition, over time, the work will become the same type and uninteresting for a full-time
+                        lawyer. And we know very well how difficult it is to find a good candidate with experience in
+                        the field of information technology in Ukraine.</span>
+                </div>
+                <div>
+                    <svg class="icon icon-structuring-icon">
+                        <use xlink:href="../sprites/symbol-defs.svg#icon-structuring-icon"></use>
+                    </svg>
+                    <span>Structuring corporate relationships</span>
+                    <span>Instead of just providing legal services, we will hire a lawyer or a whole team that will fit
+                        into the daily life of your company.</span>
+                </div>
+                <div>
+                    <svg class="icon icon-building-icon">
+                        <use xlink:href="../sprit es/symbol-defs.svg#icon-building-icon"></use>
+                    </svg>
+                    <span>Building contractual relations</span>
+                    <span>Once a week, or week after month, you have your own lawyer by your side. Anyone in the
+                        company can catch it at the coffee maker and just talk about current affairs instead of waiting
+                        for update status.</span>
+                </div>
+                <div>
+                    <svg class="icon icon-protection-icon">
+                        <use xlink:href="../sprites/symbol-defs.svg#icon-protection-icon"></use>
+                    </svg>
+                    <span>Protection of business, intellectual property</span>
+                    <span>And all the other time he will work on new diverse projects, so he will definitely not stop in
+                        professional development. One way or another, all Axon Partners will work for you instead of a
+                        corporate lawyer.</span>
+                </div>
+                <div>
+                    <svg class="icon icon-judicial-icon">
+                        <use xlink:href="../sprites/symbol-defs.svg#icon-judicial-icon"></use>
+                    </svg>
+                    <span>Judicial representation</span>
+                    <span>Is it a small, medium-sized company or a market leader? Local business or multinational
+                        company? Do you have your own legal department or not?</span>
+                </div>
+            </div>
+            <div class="carousel-about-us">
+                <span><a href="#" class="carousel-about-us_point"></a></span><span><a href="#"
+                        class="carousel-about-us_point"></a></span><span><a href="#"
+                        class="carousel-about-us_point"></a></span>
+                <span><a href="#" class="carousel-about-us_point carousel-about-us_point_mobile"></a></span><span><a
+                        href="#"
+                        class="carousel-about-us_point carousel-about-us_point_mobile"></a></span></span><span><a
+                        href="#" class="carousel-about-us_point carousel-about-us_point_mobile"></a></span></span>
+            </div>
+            <span>They already trust us</span>
+            <div class="logos">
+                <div><img src="././jpeg-png/homepage/hillel.png" alt="hillel"></div>
+                <div><img src="././jpeg-png/homepage/wanna-biz.png" alt="wannabiz"></div>
+                <div><img src="././jpeg-png/homepage/tapgerine.png" alt="tapgerine"></div>
+                <div><img src="././jpeg-png/homepage/3d-look.png" alt="3dlook"></div>
+                <div><img src="././jpeg-png/homepage/orangear.png" alt="orangear"></div>
+                <div><img src="././jpeg-png/homepage/adtellige.png" alt="adtelligent"></div>
+                <div><img src="././jpeg-png/homepage/clickky.png" alt="clickky"></div>
+                <div><img src="././jpeg-png/homepage/eco-leasing.png" alt="eco-leasing"></div>
+                <div><img src="././jpeg-png/homepage/infra-tek.png" alt="infratek"></div>
+                <div><img src="././jpeg-png/homepage/city-park.png" alt="city-par"></div>
+                <div><img src="././jpeg-png/homepage/art-print.png" alt="artprint"></div>
+                <div><img src="././jpeg-png/homepage/ultimate-card.png" alt="ultimatecard"></div>
+            </div>
+            <span>PUBLICATIONS ></span>
+            <h2>We have something to tell</h2>
+            <div>
+                <div>
+                    <img src="././jpeg-png/homepage/first-publication.png" alt="infograms">
+                    <span>Equity associate</span>
+                    <span>April 22</span>
+                    <span>______________</span>
+                    <span>I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my
+                        parents told me that if I…</span>
+                </div>
+                <div>
+                    <img src="././jpeg-png/homepage/gdpr.png" alt="gdpr-logo">
+                    <span>Penalty for the Good Corporation: what will happen to Google and others for violating the
+                        GDPR</span>
+                    <span>September 29</span>
+                    <span>______________</span>
+                    <span>And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua
+                        January 21 National Commission for Data Protection.</span>
+                </div>
+                <div>
+                    <img src="././jpeg-png/homepage/third-publications.png" alt="peoples">
+                    <span>Millennial Testament</span>
+                    <span>August 19 </span>
+                    <span>______________</span>
+                    <span>What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical
+                        legacy of the Ukrainian generation X looks like this: an apartment in…</span>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
