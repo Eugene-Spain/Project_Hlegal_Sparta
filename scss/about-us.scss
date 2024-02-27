@@ -4,6 +4,7 @@
 @import "./common";
 @import "./header-light";
 @import "./carousel";
+@import "./footer";
 
 .legal-services {
     min-width: 315px;
@@ -64,32 +65,6 @@
             margin-bottom: 10px;
         }
     }
-
-    @media (min-width:1024px) {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        h2{
-            font-size: 3.8rem;
-            max-width: 362px;
-        }
-        &__description {
-            max-width: 486px;
-
-            h1{
-                font-size: 3.8rem;
-            }
-        }
-
-        &__perks {
-            max-width: 388px;
-        }
-    }
-
-    @media (min-width:768px) {
-        min-width: 648px;
-        margin: 60px;
-    }
 }
 
 .main-photo {
@@ -118,26 +93,76 @@
     gap: 30px;
     padding-top: 30px;
 
+    div:first-child {
+        display: block;
+    }
+
     &__layout {
         width: 255px;
         height: 90px;
         border: 1px solid transparent;
         border-radius: 12px;
         background-color: #fff;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
-
-        img {
-            display: none;
-
-            &:first-child {
-                display: block;
-            }
-        }
     }
 
     .carousel-about-us {
         padding-bottom: 30px;
+    }
+}
+
+
+@media (min-width:768px) {
+    .legal-services {
+        min-width: 648px;
+        margin: 60px;
+    }
+
+    .achievements-list {
+
+        &__wrapper {
+            display: flex;
+            gap: 40px;
+        }
+
+        &__layout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .legal-services {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        h2 {
+            font-size: 3.8rem;
+            max-width: 362px;
+        }
+
+        &__description {
+            max-width: 486px;
+
+            h1 {
+                font-size: 3.8rem;
+            }
+        }
+
+        &__perks {
+            max-width: 388px;
+        }
+    }
+}
+
+@media (min-width:1440px) {
+    .legal-services {
+        margin: 60px 180px;
     }
 }

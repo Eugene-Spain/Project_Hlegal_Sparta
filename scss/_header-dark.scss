@@ -108,7 +108,7 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
   .header {
     &__background-mobile {
@@ -127,6 +127,7 @@
         svg {
           max-width: 6px;
           max-height: 6px;
+          fill: $grey_separator;
         }
       }
 
@@ -206,7 +207,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .header {
     padding: 50px 60px 0 60px;
     display: grid;//Использовал грид для перехода, потому что средний элемент выходит влево
@@ -230,7 +231,7 @@
   }
 }
 
-@media only screen and (min-width: 1920px) {
+@media (min-width: 1920px) {
   .header {
     padding: 50px 160px 0 160px;
   }
