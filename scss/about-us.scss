@@ -81,6 +81,8 @@
         display: flex;
         justify-content: center;
         max-width: 100vw;
+        margin: 0 auto;
+
     }
 }
 
@@ -94,7 +96,7 @@
     padding-top: 30px;
 
     div:first-child {
-        display: block;
+        display: flex;
     }
 
     &__layout {
@@ -131,7 +133,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            width: 132px;
+             
+            img{
+                max-width: 106px;
+            }
         }
     }
 }
@@ -159,10 +165,43 @@
             max-width: 388px;
         }
     }
+    
+    .achievements-list{
+        &__layout{
+            width: 196px;
+            height: 110px;
+
+            img{
+                max-width: 159px;
+            }
+        }
+    }
 }
 
 @media (min-width:1440px) {
     .legal-services {
         margin: 60px 180px;
+    }
+
+    .achievements-list{
+        &__layout{
+            width: 300px;
+
+            img{
+                max-width: 195px;
+            }
+        }
+    }
+}
+
+@media (min-width:1920px) {
+    .legal-services {
+        margin: 60px 280px;
+    }
+
+    .achievements-list{
+        &__layout{
+            width: 370px;
+        }
     }
 }
