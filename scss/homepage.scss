@@ -3,3 +3,23 @@
 @import "./variables";
 @import "./common";
 @import "./carousel";
+@import "./header-dark";
+
+body{
+    background-color: rgb(179, 179, 179); 
+}
+.icon-scroll-button-img {
+    width: 42px;
+    height: 42px; 
+}
+.it-and-e-commerce-icon {
+    width: 42px;
+    height: 42px;
+    fill: $gradient_red_text;   
+}
+
+.logos { 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0;
+}
