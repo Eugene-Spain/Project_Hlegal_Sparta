@@ -8,18 +8,92 @@
 body{
     background-color: rgb(179, 179, 179); 
 }
-.icon-scroll-button-img {
+
+.main__scroll-button {
     width: 42px;
     height: 42px; 
-}
-.it-and-e-commerce-icon {
-    width: 42px;
-    height: 42px;
-    fill: $gradient_red_text;   
+} 
+
+.logos {
+    margin: 0 auto;
+    max-width: 1720px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 375px));   
+    align-items: center;
+    justify-content: center; 
+
+    div{
+        min-width: 375px;
+        min-height: 120px;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div:nth-child(1) {   
+        background-color: #1C4280 ;
+         
+    }
+
+    div:nth-child(2) {   
+        background-color: #143646; 
+     
+    }
+
+    div:nth-child(3) {   
+        background-color: #F48B30;
+         
+    }
+
+    div:nth-child(4) {   
+        background-color: #9E4DC3;
+         
+    }
+
+    div:nth-child(5) {   
+        background-color: #FD9339;
+      
+         
+    }
+
+    div:nth-child(6) {   
+        background-color: #E2E2E4;
+         
+    }
+
+    div:nth-child(7) {   
+        background-color: #C71C36;
+         
+    }
+
+    div:nth-child(8) {   
+        background-color: #DCF3F9;
+         
+    }
+
+    div:nth-child(9) {   
+        background-color: #EAEAEA;
+         
+    }
+
+    div:nth-child(10) {   
+        background-color: #282240;
+         
+    }
+
+    div:nth-child(11) {   
+        background-color: #1D4568;
+         
+    }
+
+    div:nth-child(12) {   
+        background-color: #000000;
+         
+    }
 }
 
-.logos { 
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 0;
+.gdpr-logo{
+    width:500px;
+    height: 500px;
 }
+
