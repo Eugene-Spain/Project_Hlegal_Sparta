@@ -1,0 +1,17 @@
+@import "./fonts";
+@import "./globals";
+@import "./variables";
+@import "./common";
+@import "./header-light";
+@import "./footer";
+
+
+.team {
+  h2 {
+    background: $gradient_red_text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+}
