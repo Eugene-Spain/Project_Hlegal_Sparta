@@ -195,11 +195,13 @@
           color: #ffffff;
         }
 
-        li:nth-child(1) {//Нужно менять для каждой страницы, будет выделяться в перечне страниц (нумерация осуществляется слева на право(about us, service, team, publication, contact))
+        &-current-page { //Нужно менять для каждой страницы, будет выделяться в перечне страниц (нумерация осуществляется слева на право(about us, service, team, publication, contact)
+          padding-bottom: 3px;
+          color: $accent;
+          border-bottom: 2px solid;
+          pointer-events: none;
           a {
-            padding-bottom: 3px;
             color: $accent;
-            border-bottom:  2px solid;
           }
         }
       }
