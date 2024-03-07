@@ -46,13 +46,15 @@
                 <div class="header__navigation-logo">
                     <!-- Логотип компании-->
                     <svg class="icon icon-logotype header__navigation-logo-img">
-                        <use xlink:href="../sprites/symbol-defs.svg#icon-logotype-black-text"></use> <!--Не забудь поменять, если нужна тёмная тема(меняем на #icon-logotype(Без -black-text))-->
+                        <use xlink:href="../sprites/symbol-defs.svg#icon-logotype-black-text"></use>
+                        <!--Не забудь поменять, если нужна тёмная тема(меняем на #icon-logotype(Без -black-text))-->
                     </svg>
                     <svg class="icon icon-logo-slash-icon header__navigation-logo-img-slash">
                         <use xlink:href="../sprites/symbol-defs.svg#icon-logo-slash-icon"></use>
                     </svg>
                     <!--Название страницы -->
-                    <p class="header__navigation-logo-breadcrumbs">team</p> <!--Меняем для каждой страницы, на которой находится пользователь-->
+                    <p class="header__navigation-logo-breadcrumbs">team</p>
+                    <!--Меняем для каждой страницы, на которой находится пользователь-->
                 </div>
                 <div class="header__navigation-button">
                     <svg class="icon icon-hamburger-icon">
@@ -66,7 +68,7 @@
                     <ul class="header__navigation-list"><!--Не забываем менять href, для перехода на другие страницы-->
                         <li><a href="#">about us</a></li>
                         <li><a href="#">services</a></li>
-                        <li><a href="#">team</a></li>
+                        <li class="header__navigation-list-current-page"><a href="#">team</a></li>
                         <li><a href="#">publications</a></li>
                         <li><a href="#">contact</a></li>
                     </ul>
@@ -77,16 +79,124 @@
 </header>
 
 <main>
-<section class="team">
-    <div>
+    <section class="team">
         <div>
-            <h2>We are used to taking responsibility and always guarantee honest, timely assistance, even in situations where most are powerless.</h2>
+            <div class="team__title">
+                <h2>We are used to taking responsibility and always guarantee honest, timely assistance, even in
+                    situations where most are powerless.</h2>
+            </div>
+            <div class="team__introduction">
+                <!--1-->
+                <div>
+                    <div class="team__introduction-photo">
+                        <img src="../jpeg-png/Team-page/Aleksander-Aleksandrovsky.jpg" alt="Aleksander">
+                    </div>
+                    <div class="team__introduction-card">
+                        <div class="team__introduction-card-info">
+                            <p class="team__introduction-card-info-name">Alexander Alexandrovsky</p>
+                            <p class="team__introduction-card-info-post">Managing partner</p>
+                        </div>
+                        <div class="team__introduction-card-svg">
+                            <svg class="icon icon-team-page-arrow-right">
+                                <use
+                                        xlink:href="../sprites/symbol-defs.svg#icon-team-page-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!--2-->
+                <div>
+                    <div class="team__introduction-photo">
+                        <img src="../jpeg-png/Team-page/Evgeniy-Patrikov.jpg" alt="Aleksander">
+                    </div>
+                    <div class="team__introduction-card">
+                        <div class="team__introduction-card-info">
+                            <p class="team__introduction-card-info-name">Evgeny Patrikov</p>
+                            <p class="team__introduction-card-info-post">Equity partner, Attorney-at-law</p>
+                        </div>
+                        <div class="team__introduction-card-svg">
+                            <svg class="icon icon-team-page-arrow-right">
+                                <use
+                                        xlink:href="../sprites/symbol-defs.svg#icon-team-page-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div>
+                    <div class="team__introduction-photo">
+                        <img src="../jpeg-png/Team-page/Vladislav-Melnik.jpg" alt="Aleksander">
+                    </div>
+                    <div class="team__introduction-card">
+                        <div class="team__introduction-card-info">
+                            <p class="team__introduction-card-info-name">Vladislav Melnik</p>
+                            <p class="team__introduction-card-info-post">Associate</p>
+                        </div>
+                        <div class="team__introduction-card-svg">
+                            <svg class="icon icon-team-page-arrow-right">
+                                <use
+                                        xlink:href="../sprites/symbol-defs.svg#icon-team-page-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!--4-->
+                <div>
+                    <div class="team__introduction-photo">
+                        <img src="../jpeg-png/Team-page/Sergey-Binn.jpg" alt="Aleksander">
+                    </div>
+                    <div class="team__introduction-card">
+                        <div class="team__introduction-card-info">
+                            <p class="team__introduction-card-info-name">Sergey Binn</p>
+                            <p class="team__introduction-card-info-post">Associate</p>
+                        </div>
+                        <div class="team__introduction-card-svg">
+                            <svg class="icon icon-team-page-arrow-right">
+                                <use
+                                        xlink:href="../sprites/symbol-defs.svg#icon-team-page-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!--5-->
+                <div>
+                    <div class="team__introduction-photo">
+                        <img src="../jpeg-png/Team-page/Oksana-Kobzar.jpg" alt="Aleksander">
+                    </div>
+                    <div class="team__introduction-card">
+                        <div class="team__introduction-card-info">
+                            <p class="team__introduction-card-info-name">Oksana Kobzar</p>
+                            <p class="team__introduction-card-info-post">Equity partner, Attorney-at-law</p>
+                        </div>
+                        <div class="team__introduction-card-svg">
+                            <svg class="icon icon-team-page-arrow-right">
+                                <use
+                                        xlink:href="../sprites/symbol-defs.svg#icon-team-page-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!--6-->
+                <div>
+                    <div class="team__introduction-photo">
+                        <img src="../jpeg-png/Team-page/Julia-Wolk.jpg" alt="Aleksander">
+                    </div>
+                    <div class="team__introduction-card">
+                        <div class="team__introduction-card-info">
+                            <p class="team__introduction-card-info-name">Julia Wolk</p>
+                            <p class="team__introduction-card-info-post">Associate, Attorney-at-law</p>
+                        </div>
+                        <div class="team__introduction-card-svg">
+                            <svg class="icon icon-team-page-arrow-right">
+                                <use
+                                        xlink:href="../sprites/symbol-defs.svg#icon-team-page-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-
-        </div>
-    </div>
-</section>
+    </section>
 </main>
 
 <footer>

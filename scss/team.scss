@@ -7,11 +7,193 @@
 
 
 .team {
-  h2 {
-    background: $gradient_red_text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  margin: 0 auto;
+  max-width: 1920px;
+
+  &__title {
+    margin: 30px 30px;
+
+    h2 {
+      background: $gradient_red_text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
+  &__introduction {
+    max-width: 315px;
+    margin: 0 auto;
+    padding-bottom: 60px;
 
+    &-photo {
+      img {
+        object-fit: cover;
+        width: 315px;
+        height: 300px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-card {
+      display: flex;
+      justify-content: space-between;
+      max-width: 315px;
+
+      &-info {
+        &-name {
+          color: $main_regular;
+          font-weight: 700;
+        }
+
+        &-name:hover {
+          color: $accent;
+          cursor: pointer;
+        }
+
+        &-post {
+          color: $grey_text;
+          font-size: 14px;
+        }
+      }
+
+      &-svg {
+        background: $grey_bg;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        stroke: $active_regular;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          width: 15px;
+          height: 18px;
+          margin-right: 1px;
+        }
+      }
+
+      &-svg:hover {
+        stroke:$accent;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .team {
+    &__title {
+      margin: 0 auto;
+      padding: 60px 66px;
+      max-width: 648px;
+    }
+
+    &__introduction {
+      display: grid;
+      gap: 60px;
+      grid-template-columns: 294px 294px;
+      max-width: none;
+      justify-content: center;
+
+      &-card {
+        max-width: 294px;
+      }
+
+      &-photo {
+        img {
+          object-fit: cover;
+          width: 294px;
+          height: 400px;
+          border-radius: 12px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .team {
+    &__title {
+      max-width: 904px;
+    }
+
+    &__introduction {
+      grid-template-columns: 261px 261px 261px;
+      margin: 0 auto;
+
+      &-card {
+        max-width: 261px;
+      }
+
+      &-photo {
+        img {
+          object-fit: cover;
+          width: 261px;
+          height: 400px;
+          border-radius: 12px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .team {
+
+    &__title {
+      max-width: 1320px;
+      padding: 60px 143px;
+    }
+
+    &__introduction {
+      margin: 0 auto;
+      grid-template-columns: 400px 400px 400px;
+
+      &-card {
+        max-width: 400px;
+      }
+
+      &-photo {
+        img {
+          object-fit: cover;
+          width: 400px;
+          height: 400px;
+          border-radius: 12px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .team {
+    &__title {
+      max-width: 1600px;
+      padding: 60px 280px;
+    }
+
+    &__introduction {
+      margin: 0 auto;
+      grid-template-columns: 500px 500px 500px;
+
+      &-card {
+        max-width: 500px;
+      }
+
+      &-photo {
+        img {
+          object-fit: cover;
+          width: 500px;
+          height: 400px;
+          border-radius: 12px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
 }
