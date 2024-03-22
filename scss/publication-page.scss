@@ -123,13 +123,44 @@
 }
 @media (min-width:768px) {
     .publications{
+        padding: 0 45px;
         &__articles{
             flex-wrap: wrap;
             flex-direction: row;
             article{
                 min-height: 514px;
-            }
+            } 
+        }
+    }
+}
+@media (min-width:1440px) {
+    .publications{
+        padding: 0 75px;
+        &__articles{
             
+            article{
+                min-width: 420px;
+                min-height: 450px;
+
+                img{
+                    width: 400px;
+                }
+            } 
+        }
+    }
+}
+@media (min-width:1920px) {
+    .publications{
+        &__articles{
+            
+            article{
+                min-width: 515px;
+                min-height: 430px;
+
+                img{
+                    width: 515px;
+                }
+            } 
         }
     }
 }
