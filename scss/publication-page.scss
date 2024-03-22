@@ -6,3 +6,51 @@
 @import "./carousel";
 @import "./footer";
 
+.publications {
+    min-width: 375px;
+
+    &__buttons {
+        width: 240px;
+        margin: 0 auto;
+
+        &__wrapper {
+            margin: 32px 0;
+            background-color: $grey_separator;
+            border: 1px solid transparent;
+            border-radius: 12px;
+            padding: 2px;
+
+            .news {
+                min-width: 105px;
+
+                a {
+                    background-color: #FFF;
+                }
+            }
+
+            .articles {
+                min-width: 122px;
+
+                a:hover {
+                    background-color: $grey_bg
+                }
+            }
+
+            .general_button {
+                height: 38px;
+
+                a {
+                    font-size: 1.6rem;
+                    color: $main_regular;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+                    padding: 8px 30px 10px;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                }
+
+
+            }
+        }
+    }
+}
