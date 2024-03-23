@@ -76,9 +76,17 @@
             .text-wrapper {
                 padding: 30px;
 
-                h4 {
+                a {
                     color: $active_regular;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+
+                    &:hover {
+                        color: $accent;
+                    }
                 }
+
 
                 .date {
                     font-size: 1.2rem;
@@ -103,7 +111,7 @@
         align-items: center;
         justify-content: center;
         padding: 30px 0;
-       
+
         button {
             width: 211px;
             height: 56px;
@@ -121,46 +129,52 @@
         }
     }
 }
+
 @media (min-width:768px) {
-    .publications{
+    .publications {
         padding: 0 45px;
-        &__articles{
+
+        &__articles {
             flex-wrap: wrap;
             flex-direction: row;
-            article{
+
+            article {
                 min-height: 514px;
-            } 
+            }
         }
     }
 }
+
 @media (min-width:1440px) {
-    .publications{
+    .publications {
         padding: 0 75px;
-        &__articles{
-            
-            article{
+
+        &__articles {
+
+            article {
                 min-width: 420px;
                 min-height: 450px;
 
-                img{
+                img {
                     width: 400px;
                 }
-            } 
+            }
         }
     }
 }
+
 @media (min-width:1920px) {
-    .publications{
-        &__articles{
-            
-            article{
+    .publications {
+        &__articles {
+
+            article {
                 min-width: 515px;
                 min-height: 430px;
 
-                img{
+                img {
                     width: 515px;
                 }
-            } 
+            }
         }
     }
 }

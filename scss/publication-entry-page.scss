@@ -1,0 +1,208 @@
+@import "./fonts";
+@import "./globals";
+@import "./variables";
+@import "./common";
+@import "./header-light";
+@import "./carousel";
+@import "./footer";
+
+.article {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            max-width: 315px;
+            background-color: #FFF;
+            border-radius: 8px;
+
+            img {
+                max-width: 315px;
+                min-height: 300px;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            .text-wrapper {
+                padding-top: 30px;
+                border-bottom: 4px solid $grey_separator;
+
+                a {
+                    color: $main_regular;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+                }
+
+                .date {
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                    font-weight: 700;
+                    padding: 15px 0 30px;
+                    color: $grey_text;
+                    border-bottom: 4px solid $grey_separator;
+                }
+
+                .description {
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                    margin-top: 30px;
+                }
+
+                .preheading {
+                    font-size: 1.6rem;
+                    line-height: 1.9rem;
+                    font-weight: 700;
+                    color: $main_alt;
+                    margin: 30px 0 15px;
+                }
+
+                ol {
+                    padding-left: 20px;
+                    margin-bottom: 15px;
+
+                    li {
+                        padding-left: 3px;
+                        font-size: 1.8rem;
+                        line-height: 2.6rem;
+                        font-weight: 400;
+                        margin-bottom: 15px;
+
+                        &::marker {
+                            color: $accent;
+                            font-weight: 700;
+                            size: 1.8rem;
+                            line-height: 2.6rem;
+                        }
+                    }
+                }
+
+                figure {
+                    figcaption {
+                        p {
+                            font-size: 1.4rem;
+                            line-height: 2.2rem;
+                            color: $grey_text;
+                        }
+                    }
+                }
+
+                .lowest-description {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .socials {
+                display: flex;
+                gap: 10px;
+                margin: 30px 0 60px;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    padding: 9px;
+                    border-radius: 12px;
+                    background-color: $grey_bg;
+
+                    &:hover {
+                        background-color: $grey_bg_alt;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-heading {
+    display: block;
+    font-size: 3rem;
+    background: $gradient_red_text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    line-height: 3.7rem;
+    margin-top: 30px;
+}
+
+.recommendations {
+    min-width: 375px;
+    margin: 0 auto;
+    background-color: $grey_bg;
+    border-radius: 12px 12px 0 0;
+    padding-top: 30px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
+        .header-link {
+            margin-left: -75px;
+
+            .h3_caps a {
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+            }
+            .mt-class{
+                margin: 5px 0;
+            }
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            max-width: 315px;
+            background-color: #FFF;
+            border-radius: 8px;
+            margin-bottom: 30px;
+
+            img {
+                width: 315px;
+                height: 200px;
+                border-radius: 8px 8px 0 0;
+            }
+
+            .text-wrapper {
+                padding: 30px;
+
+                a {
+                    color: $active_regular;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.9rem;
+
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+
+                .date {
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                    font-weight: 700;
+                    padding: 15px 0;
+                    color: $grey_text;
+                    border-bottom: 4px solid $grey_separator;
+                }
+
+                .description {
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
