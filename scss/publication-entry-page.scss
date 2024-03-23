@@ -26,7 +26,7 @@
             border-radius: 8px;
             justify-content: center;
 
-            img {
+            .main-image {
                 max-width: 80vw;
                 min-height: 300px;
                 border-radius: 8px;
@@ -88,7 +88,14 @@
                 }
 
                 figure {
-                   
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        max-width: 70vw;
+                    }
+
                     figcaption {
                         p {
                             font-size: 1.4rem;
@@ -157,53 +164,59 @@
                 font-size: 1.4rem;
                 line-height: 1.7rem;
             }
-            .mt-class{
+
+            .mt-class {
                 margin: 5px 0;
             }
         }
 
-        article {
+        &__articles {
             display: flex;
             flex-direction: column;
-            max-width: 80vw;
-            background-color: #FFF;
-            border-radius: 8px;
-            margin-bottom: 30px;
+            gap: 30px;
 
-            img {
+            article {
+                display: flex;
+                flex-direction: column;
                 max-width: 80vw;
-                min-height: 200px;
-                border-radius: 8px 8px 0 0;
-                object-fit: cover;
-            }
+                background-color: #FFF;
+                border-radius: 8px;
 
-            .text-wrapper {
-                padding: 30px;
+                img {
+                    max-width: 80vw;
+                    min-height: 200px;
+                    border-radius: 8px 8px 0 0;
+                    object-fit: cover;
+                }
 
-                a {
-                    color: $active_regular;
-                    font-size: 1.6rem;
-                    font-weight: 700;
-                    line-height: 1.9rem;
+                .text-wrapper {
+                    padding: 30px;
 
-                    &:hover {
-                        color: $accent;
+                    a {
+                        color: $active_regular;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        line-height: 1.9rem;
+
+                        &:hover {
+                            color: $accent;
+                        }
                     }
-                }
 
-                .date {
-                    font-size: 1.2rem;
-                    line-height: 1.4rem;
-                    font-weight: 700;
-                    padding: 15px 0;
-                    color: $grey_text;
-                    border-bottom: 4px solid $grey_separator;
-                }
+                    .date {
+                        font-size: 1.2rem;
+                        line-height: 1.4rem;
+                        font-weight: 700;
+                        padding: 15px 0;
+                        color: $grey_text;
+                        border-bottom: 4px solid $grey_separator;
+                    }
 
-                .description {
-                    font-size: 1.4rem;
-                    line-height: 2.2rem;
-                    margin-top: 15px;
+                    .description {
+                        font-size: 1.4rem;
+                        line-height: 2.2rem;
+                        margin-top: 15px;
+                    }
                 }
             }
         }
@@ -211,41 +224,126 @@
 }
 
 @media (min-width:768px) {
-    .article{
-        article{
-            img{
-                min-height: 500px;
+
+    .article {
+        margin-top: 60px;
+
+        &__wrapper {
+            article {
+
+                .text-wrapper {
+                    article {
+                        .main-image {
+                            min-height: 500px;
+                        }
+                    }
+
+                    figure {
+                        img {
+                            max-width: 640px;
+                        }
+                    }
+                }
             }
         }
     }
-    .recommendations{
-        &__wrapper__articles{
+
+    .recommendations {
+        &__wrapper__articles {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
 
-            article{
+            article {
                 max-width: 310px;
 
-                img{
+                img {
                     max-width: none;
                 }
             }
 
-            .first-article{
+            .first-article {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2;
             }
-            .second-article{
+
+            .second-article {
                 grid-column: 2 / 3;
                 grid-row: 1 / 2;
             }
-            .third-article{
+
+            .third-article {
                 grid-column: 1 / 3;
                 grid-row: 2 / 2;
                 max-width: 648px;
             }
-            
+
+        }
+    }
+}
+
+@media (min-width:1024px) {
+
+    .recommendations {
+        &__wrapper__articles {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            article {
+                max-width: 310px;
+
+                img {
+                    max-width: none;
+                }
+            }
+
+            .first-article {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            .second-article {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            .third-article {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+                max-width: 310px;
+            }
+        }
+    }
+}
+
+@media (min-width:1440px) {
+
+    .recommendations {
+        &__wrapper__articles {
+
+            article {
+                max-width: 420px;
+            }
+
+            .third-article {
+                max-width: 420px;
+            }
+        }
+    }
+}
+@media (min-width:1920px) {
+
+    .recommendations {
+        &__wrapper__articles {
+
+            article {
+                max-width: 513px;
+            }
+
+            .third-article {
+                max-width: 513px;
+            }
         }
     }
 }
