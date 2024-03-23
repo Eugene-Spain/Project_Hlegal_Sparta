@@ -21,12 +21,13 @@
         article {
             display: flex;
             flex-direction: column;
-            max-width: 315px;
+            max-width: 80vw;
             background-color: #FFF;
             border-radius: 8px;
+            justify-content: center;
 
             img {
-                max-width: 315px;
+                max-width: 80vw;
                 min-height: 300px;
                 border-radius: 8px;
                 object-fit: cover;
@@ -87,6 +88,7 @@
                 }
 
                 figure {
+                   
                     figcaption {
                         p {
                             font-size: 1.4rem;
@@ -134,7 +136,7 @@
 }
 
 .recommendations {
-    min-width: 375px;
+    max-width: 100vw;
     margin: 0 auto;
     background-color: $grey_bg;
     border-radius: 12px 12px 0 0;
@@ -148,7 +150,7 @@
         align-items: center;
 
         .header-link {
-            margin-left: -75px;
+            width: 80vw;
 
             .h3_caps a {
                 font-weight: 700;
@@ -163,15 +165,16 @@
         article {
             display: flex;
             flex-direction: column;
-            max-width: 315px;
+            max-width: 80vw;
             background-color: #FFF;
             border-radius: 8px;
             margin-bottom: 30px;
 
             img {
-                width: 315px;
-                height: 200px;
+                max-width: 80vw;
+                min-height: 200px;
                 border-radius: 8px 8px 0 0;
+                object-fit: cover;
             }
 
             .text-wrapper {
@@ -203,6 +206,46 @@
                     margin-top: 15px;
                 }
             }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .article{
+        article{
+            img{
+                min-height: 500px;
+            }
+        }
+    }
+    .recommendations{
+        &__wrapper__articles{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            article{
+                max-width: 310px;
+
+                img{
+                    max-width: none;
+                }
+            }
+
+            .first-article{
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            .second-article{
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            .third-article{
+                grid-column: 1 / 3;
+                grid-row: 2 / 2;
+                max-width: 648px;
+            }
+            
         }
     }
 }
